@@ -1,0 +1,43 @@
+.countryCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    width: 170px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 2%;
+}
+
+.flagImage {
+    height: 60%;
+    width: 60%;
+}
+
+.countryName {
+    font-weight: bold;
+}
+
+
+.countriesPage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.inputField {
+    width: 70%;
+    text-align: center;
+    height: 80%;
+    font-size: 100%;
+    font-weight: bolder;
+}
