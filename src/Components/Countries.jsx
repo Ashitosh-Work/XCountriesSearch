@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import styles from './Countries.module.css'
+import './Countries.css'
 
 const CountryCard = ({ name, flag }) => {
     return (
-        <div className={styles.countryCard}>
-            <img src={flag} alt={name} className={styles.flagImage} />
-            <p className={styles.countryName}>{name}</p>
+        <div className='countryCard'>
+            <img src={flag} alt={name} className='flagImage' />
+            <p className='countryName'>{name}</p>
         </div>
     )
 }
@@ -41,11 +41,11 @@ export default function Countries() {
 
     return (
         <>
-            <div className={styles.inputDiv}>
-                <input type='text' placeholder='Search for countries...' value={country} onChange={(event) => changeHandler(event)} className={styles.inputField} />
+            <div className='inputDiv'>
+                <input type='text' placeholder='Search for countries...' value={country} onChange={(event) => changeHandler(event)} className='inputField' />
             </div>
             <br />
-            <div className={styles.countriesPage}>
+            <div className='countriesPage'>
                 {!searchCountry.length ? <h1>Country not found</h1> : searchCountry.map((ele) => <CountryCard name={ele.name.common} flag={ele.flags.png} key={ele.cca3} />)}
             </div>
         </>
